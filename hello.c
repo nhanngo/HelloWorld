@@ -12,6 +12,11 @@ static char* trim(char* p)
 	return p;
 }
 
+static void printtest(char *p)
+{
+	printf("bullshit");
+}
+
 int main(int argc, char* argv[])
 {
 	printf("Hello world \n");
