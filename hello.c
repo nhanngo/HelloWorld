@@ -4,25 +4,30 @@
 
 static char* trim(char* p)
 {
-	while ( isspace(*p) )  p++;
-	int len = strlen(p);
+  while ( isspace(*p) )  p++;
+  int len = strlen(p);
 
-	while ( isspace(p[len - 1])) len--;
-	p[len] = '\0';
-	return p;
+  while ( isspace(p[len - 1])) len--;
+  p[len] = '\0';
+  return p;
 }
 
 static void printtest(char *p)
 {
-	printf("bullshit");
+  printf("bullshit");
+}
+
+int mystrlen(char *p)
+{
+  return strlen(p);
 }
 
 int main(int argc, char* argv[])
 {
-	printf("Hello world \n");
-	
-	char p[] = " Mr Big ";
-	printf("%s\n", trim(p));
+  printf("Hello world \n");
+  
+  char p[] = " Mr Big ";
+  printf("%s\n", trim(p));
 
-	return 0;
+  return 0;
 }
