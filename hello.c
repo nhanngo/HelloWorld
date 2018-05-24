@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 
+/* this is function pointer passed to inbuilt sort function */
 typedef int (*compare_num)(int a, int b);
 
 int cmp(const void *a, const void  *b) 
