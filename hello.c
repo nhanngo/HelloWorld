@@ -6,6 +6,9 @@
 /* this is function pointer passed to inbuilt sort function */
 typedef int (*compare_num)(int a, int b);
 
+/* implemnt mrt for May 2018 - verify user */
+bool checkuser(int userid);
+
 int cmp(const void *a, const void  *b) 
 {
   return ( *(int*)a - *(int*)b );
@@ -30,6 +33,19 @@ int mystrlen(char *p)
 {
   return strlen(p);
 }
+
+
+bool checkuser(int userid) 
+{
+	bool ret = false;
+	
+	if (userid > 100) {
+		ret = true;
+	}
+	
+	return ret;
+}
+
 
 int main(int argc, char* argv[])
 {
