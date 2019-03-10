@@ -14,6 +14,10 @@ int cmp(const void *a, const void  *b)
   return ( *(int*)a - *(int*)b );
 }
 
+void hotfix() {
+  printf("This is hotfix #1");
+}
+
 static char* trim(char* p)
 {
   while ( isspace(*p) )  p++;
